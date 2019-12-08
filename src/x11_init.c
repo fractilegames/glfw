@@ -980,7 +980,7 @@ int _glfwPlatformInit(void)
     _glfw.x11.helperWindowHandle = createHelperWindow();
     _glfw.x11.hiddenCursorHandle = createHiddenCursor();
 
-    if (XSupportsLocale())
+    /*if (XSupportsLocale())
     {
         XSetLocaleModifiers("");
 
@@ -993,7 +993,7 @@ int _glfwPlatformInit(void)
                 _glfw.x11.im = NULL;
             }
         }
-    }
+    }*/
 
 #if defined(__linux__)
     if (!_glfwInitJoysticksLinux())
